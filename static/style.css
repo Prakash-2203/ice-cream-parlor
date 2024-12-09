@@ -1,0 +1,139 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align everything */
+    min-height: 100vh;
+}
+
+/* Header */
+header h1 {
+    color: #2c3e50; /* Dark charcoal */
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Form Styles */
+form {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+input:focus, button:focus {
+    outline: none;
+    border-color: #3498db; /* Blue focus */
+}
+
+button {
+    background-color: #3498db; /* Blue button */
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Link Styles */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #e74c3c; /* Red delete button */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+    }
+}
